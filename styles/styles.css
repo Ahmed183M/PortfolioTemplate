@@ -1,0 +1,190 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: myFirstFont;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    margin-right: 20px;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.name {
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url("../AhmedMohammed.png");
+    background-size: cover;
+}
+
+.name h1 {
+    font-size: xx-large;
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+i {
+    font-size: larger;
+    margin: 10px;
+    color: #009688;
+}
+
+.skills i,
+.languages i,
+.workExperience i,
+.Education i {
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.contact,
+.skills,
+.languages {
+    text-align: left;
+    border-bottom: grey 1px solid;
+    padding-bottom: 20px;
+}
+
+.languages {
+    border-bottom: none;
+}
+
+.contact p {
+    font-size: large;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.skills p,
+.languages p,
+.workExperience p,
+.Education p {
+    font-size: large;
+    color: grey;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: lightgrey;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.progress div {
+    line-height: 25px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 20px;
+    width: 60%;
+    height: 100%;
+}
+
+span {
+    background-color: #009688;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h4 {
+    font-size: larger;
+    margin: 10px;
+}
+
+.exp {
+    text-align: left;
+    width: 100%;
+    margin: 15px 50px;
+}
+
+.workExperience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        display: block;
+    }
+
+    .name {
+        height: 500px;
+    }
+
+    .info {
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0px;
+    }
+
+    .experiences {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .workExperience,
+    .Education {
+        padding: 0;
+        margin: 20px 0px;
+    }
+}
