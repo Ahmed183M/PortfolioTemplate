@@ -162,7 +162,7 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .main {
         display: block;
     }
@@ -186,5 +186,9 @@ h4 {
     .Education {
         padding: 0;
         margin: 20px 0px;
+    }
+
+    .exp {
+        margin: 0;
     }
 }
